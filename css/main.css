@@ -1,0 +1,82 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: .3s;
+}
+img{display: block;}
+body{
+    color: #333;
+    font-family: 'GmarketSansMedium';
+}
+div{transition: .3s;}
+
+#header img{
+    width: 150px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#bg{
+    width: 100%;height: 100vh;
+    position: fixed;
+    top: 0;left: 0;
+    background: url("../img/bg01.jpg") 50% 50% / cover;
+    z-index: -100;    
+}
+
+#copy{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2rem;
+    filter: drop-shadow(0 0 1px #369);
+}
+#copy{display: flex;}
+#copy span{
+    animation : move 6s infinite;
+    display: block;
+}
+@keyframes move {
+    0%{transform:translateX(50px);opacity: 0;}    
+    10%{transform:translateX(0px);opacity: 1;}    
+    80%{transform:translateX(0px);opacity: 1;}    
+    100%{transform:translateX(-50px);opacity: 0;}           
+}
+nav{
+    position: fixed;
+    top: calc(10% + 5rem);
+    right: 12%;
+    text-align: right;
+}
+.gnb > li > a{
+    font-size: 1.2rem;      
+}
+.sub{display: none;}
+.gnb > li.on > a{
+    border-bottom: 1px #369 solid;
+}
+.gnb > li.on .sub a{
+    margin-right: 5px;
+}
+.gnb > li.on{
+    margin-bottom: 10px;
+}
+
+#slide{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;height: 50vh;
+    background: #fff;
+}
