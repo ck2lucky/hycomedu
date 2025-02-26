@@ -10,8 +10,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 </head>
 <body>
+
     <div id="bg"></div>
     <div id="copy">        
         <span>Leave&nbsp;</span>
@@ -29,7 +31,7 @@
                 <ul class="sub">
                     <li><a href="#" class="intro">학교이력</a></li>
                     <li><a href="#">강사진</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#" class="map">오시는길</a></li>
                 </ul>
             </li>
             <li>
@@ -74,7 +76,13 @@
             <div><img src="img/intro2.png" alt=""></div>            
         </div>
     </div>
-    
+    <div class="popup popup_map"><!-- map -->
+        <div class="close">X</div>
+        
+            <div><img src="img/map.png" alt=""></div>                        
+        
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

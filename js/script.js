@@ -1,3 +1,4 @@
+
 $(".gnb a").click(
     function(){
         $(".gnb a").removeClass("active");
@@ -28,6 +29,7 @@ $('#slide').slick({
 
 $(".national").click(
     function(){
+        $(".popup").hide();
         $(".popup_slide").show();
     }
 );
@@ -48,7 +50,14 @@ $('#intro').slick({
 
 $(".intro").click(
     function(){
+        $(".popup").hide();
         $(".popup_intro").show();
+    }
+);
+$(".map").click(
+    function(){
+        $(".popup").hide();
+        $(".popup_map").show();
     }
 );
 
