@@ -18,7 +18,6 @@ body{
     color: #333;
     font-family: 'GmarketSansMedium';
 }
-/* div{transition: .3s;} */
 
 #header img{
     width: 150px;
@@ -96,7 +95,6 @@ nav{
     line-height: 32px;
     position: absolute;
     z-index: 100;
-    right: 0;
-    /* outline: 1px #777 solid; */
+    right: 0;    
     cursor: pointer;
 }
