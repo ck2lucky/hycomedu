@@ -22,9 +22,8 @@ $(".gnb > li > a").click(
 $('#slide').slick({
     dots: true,
     infinite: true,
-    speed: 900,
-    fade: true,
-    autoplay: true,    
+    speed: 900,    
+    autoplay: true    
 });
 
 $(".national").click(
@@ -43,9 +42,8 @@ $(".close").click(
 $('#intro').slick({
     dots: true,
     infinite: true,
-    speed: 900,
-    fade: true,
-    autoplay: true,    
+    speed: 900,    
+    autoplay: true    
 });
 
 $(".intro").click(
