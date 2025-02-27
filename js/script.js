@@ -19,43 +19,52 @@ $(".gnb > li > a").click(
 
 
 
-$('#slide').slick({
-    dots: true,
-    infinite: true,
-    speed: 900,    
-    autoplay: true    
-});
+
 
 $(".national").click(
     function(){
         $(".popup").hide();
         $(".popup_slide").show();
+        $('#slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 900,    
+            autoplay: true    
+        });
     }
 );
 $(".close").click(
     function(){
-        $(".popup").hide();
+        $('.popup').hide();
+        $(".gnb li").removeClass("on");
+        $(".gnb a").removeClass("active");  
+        $(".sub").slideUp();
     }
 );
 
-
-$('#intro').slick({
-    dots: true,
-    infinite: true,
-    speed: 900,    
-    autoplay: true    
-});
 
 $(".intro").click(
     function(){
         $(".popup").hide();
         $(".popup_intro").show();
+        $('#intro').slick({
+            dots: true,
+            infinite: true,
+            speed: 900,    
+            autoplay: true    
+        });
     }
 );
 $(".map").click(
     function(){
         $(".popup").hide();
         $(".popup_map").show();
+    }
+);
+$(".cardInfo").click(
+    function(){
+        $(".popup").hide();
+        $(".popup_cardInfo").show();
     }
 );
 
