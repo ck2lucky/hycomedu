@@ -28,7 +28,13 @@ body{
 
 }
 #header a{width: 50%;}
-
+#footer{
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: #333;
+    color: #fff;
+}
 .gnb{
     display: flex;
     justify-content: space-around;
@@ -39,4 +45,6 @@ body{
 .sub{display: none;}
 
 .since{width: 30%;margin-left: auto;}
-#intro li{padding: 16px 24px;}
+#contents li{padding: 16px 24px;}
+.m_text span{line-height: 32px; color: #369;}
+.m_text{line-height: 24px;}
