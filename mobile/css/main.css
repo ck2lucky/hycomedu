@@ -13,17 +13,30 @@ a{
     color: inherit;
     transition: .3s;
 }
-img{display: block;}
+img{display: block; max-width: 100%;}
 body{
     color: #333;
     font-family: Gmarket Sans;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #header{
-    height: 48px;
+    height: 64px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;   
+
 }
-#header img{width: 50%;}
+#header a{width: 50%;}
+
+.gnb{
+    display: flex;
+    justify-content: space-around;
+    line-height: 32px;    
+    background: #369;
+    color: #fff;
+}
+.sub{display: none;}
+
+.since{width: 30%;margin-left: auto;}
+#intro li{padding: 16px 24px;}
