@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" class="search-form" style="display: flex;">
+        <div style="position: relative; width: 100%;">
+            <input type="text" id="keyword" name="keyword" placeholder="키워드를 입력하세요" style="width:100%; height: 60px; border: 1px solid #ccc; border-radius: 5px 0 0 5px; padding: 5px;" value="" onkeyup="toggleClearButton()">
+                            </div>
+        <button type="submit" style="height: 60px; border: none; border-radius: 0 5px 5px 0; background-color: #015383; color: white;"><i class="fas fa-search" style="font-size: 20px;"></i></button>
+    </form>
+
+    <script src="data:text/javascript;base64,CiAgICBmdW5jdGlvbiB0b2dnbGVDbGVhckJ1dHRvbigpIHsKICAgICAgICB2YXIga2V5d29yZElucHV0ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2tleXdvcmQnKTsKICAgICAgICB2YXIgY2xlYXJCdXR0b24gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2xlYXJCdXR0b24nKTsKICAgICAgICBpZiAoa2V5d29yZElucHV0LnZhbHVlLnRyaW0oKSAhPT0gJycpIHsKICAgICAgICAgICAgY2xlYXJCdXR0b24uc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgY2xlYXJCdXR0b24uc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICAgICAgICB9CiAgICB9CgogICAgZnVuY3Rpb24gY2xlYXJLZXl3b3JkKCkgewogICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdrZXl3b3JkJykudmFsdWUgPSAnJzsKICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2xlYXJCdXR0b24nKS5zdHlsZS5kaXNwbGF5ID0gJ25vbmUnOwogICAgfQogICAg" data-rocket-status="executed">
+        function toggleClearButton() {
+            var keywordInput = document.getElementById('keyword');
+            var clearButton = document.getElementById('clearButton');
+            if (keywordInput.value.trim() !== '') {
+                clearButton.style.display = 'block';
+            } else {
+                clearButton.style.display = 'none';
+            }
+        }
+    
+        function clearKeyword() {
+            document.getElementById('keyword').value = '';
+            document.getElementById('clearButton').style.display = 'none';
+        }
+        </script>
+</body>
+</html>
